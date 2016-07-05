@@ -22,8 +22,11 @@
 
 ## 设置服务端口
 默认udp 150和tcp 150 ,修改端口后服务端会自动修改防火墙.
+
 linux版: mkdir -p /fs/cnf/ ; echo 端口号 > /fs/cnf/listen_port ; sh /fs/restart.sh
+
 windows 版: 在cnf目录下新建文件listen_port,文件内容为端口号.
+
 注意:由于finalspeed的工作原理,不要开放finalspeed所使用的tcp端口.
 
 ## 设置开机启动
