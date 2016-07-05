@@ -31,10 +31,14 @@ windows 版: 在cnf目录下新建文件listen_port,文件内容为端口号.
 
 ## 设置开机启动
 * chmod +x /etc/rc.local
+
 使用vim编辑:
+
 * vim /etc/rc.local
+
 加入该行：sh /fs/start.sh
 
 ## 设置每天3点自动重启
 * crontab -e
+
 添加该行：0 3 * * *  sh /fs/restart.sh
